@@ -1,31 +1,26 @@
+    let a = document.getElementById('firstNumber');
+    let b = document.getElementById('secondNumber');
+
 function calcSum(){
-    let a = document.getElementById('firstNumber').value;
-    let b = document.getElementById('secondNumber').value;
-    let sum = Number(a) + Number(b);
+    let sum = Number(a.value) + Number(b.value);
     document.getElementById('result').textContent = sum;
     return sum;
 }
 
 function calcMinus(){
-    let a = document.getElementById('firstNumber').value;
-    let b = document.getElementById('secondNumber').value;
-    let minus = a - b;
+    let minus = a.value - b.value;
     document.getElementById('result').textContent = minus;
     return minus;
 }
 
 function calcMulti(){
-    let a = document.getElementById('firstNumber').value;
-    let b = document.getElementById('secondNumber').value;
-    let multi = a * b;
+    let multi = a.value * b.value;
     document.getElementById('result').textContent = multi;
     return multi;
 }
 
 function calcDivide(){
-    let a = document.getElementById('firstNumber').value;
-    let b = document.getElementById('secondNumber').value;
-    let divide = a / b;
+    let divide = a.value / b.value;
     document.getElementById('result').textContent = divide;
     return divide;
 }
